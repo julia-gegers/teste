@@ -1,6 +1,7 @@
 import React from 'react'
 import './index.scss'
-import Header from '../../components/Header/Header'
+import Header from "../../components/Header/Header.jsx";
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   return (
@@ -18,9 +19,11 @@ const Login = () => {
           <input id='input1' type="text" placeholder='Nome completo' />
 
           <p>Senha:</p>
-          <input type="password" placeholder='******' />
+          <input id='input2' type="password" placeholder='******' />
         </div>
-        <button>Entrar</button>
+        <button id='btn'>
+          <Link to={`/home`}>Entrar</Link>
+        </button>
       </div>
     </section>
   )

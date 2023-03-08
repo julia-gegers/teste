@@ -5,10 +5,10 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Login from './views/Login/Login';
-import Home from './views/Login/Home/Home';
-import Products from './views/Login/Products/Products';
-import Pay from './views/Login/Pay/Pay';
+import Login from "./views/Login/Login";
+import Home from "./views/Home/Home";
+import Products from "./views/Products/Products";
+import Pay from "./views/Pay/Pay";
 
 
 const router = createBrowserRouter([
